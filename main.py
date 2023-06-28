@@ -14,7 +14,7 @@ def calculate_beats(bpm, song_duration):
     return beats
 
 def main():
-    print("Welcome to Yukii's Beat Generator for Just Dance")
+    print("Welcome to Just Dance UbiArt Beats Maker by Yukii. No credits needed for public usage!")
     codename = input("Enter the codename for the output file: ")
     bpm = int(input("Enter the BPM: "))
     song_duration = int(input("Enter the song duration in seconds: "))
