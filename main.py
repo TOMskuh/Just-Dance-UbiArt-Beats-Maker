@@ -3,11 +3,11 @@ import json
 def calculate_beats(bpm, song_duration):
     minutes = song_duration / 60
     total_beats = int(bpm * minutes)
-    beat_interval = song_duration / total_beats
+    beat_interval = song_duration * 1000 / total_beats
 
     beats = []
     for i in range(total_beats):
-        beat_time = i * beat_interval
+        beat_time = int(i * beat_interval)
         beats.append(beat_time)
 
     return beats
